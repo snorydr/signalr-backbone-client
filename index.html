@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Backbone Client</title>
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="scripts/jquery-2.1.3.js"></script>
+    <script src="scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="/api/signalr/js"></script>
+    <script src="scripts/underscore.js"></script>
+    <script src="scripts/backbone.js"></script>
+    <script src="scripts/backbone.signalr.js"></script>
+    <script id="template-pushTimer" type="text/template">
+        <td><%-id%></td>
+        <td class="sep"><%-createdOn%></td>
+        <td class="sep"><%-updatedOn%></td>
+        <td class="sep"><%-countDown%></td>
+    </script>
+    <script id="template-pushTimerList" type="text/template">
+        <thead>
+            <tr>
+                <th>ID</th><th class="sep">Created</th><th class="sep">Updated</th><th class="sep">CountDown</th>
+            </tr>
+        </thead>
+    </script>
+</head>
+<body>
+    <div id="display">
+    </div>
+</body>
+<script src="scripts/main.js"></script>
+<script src="scripts/models/pushTimer.js"></script>
+<script src="scripts/collections/pushTimer.js"></script>
+<script src="scripts/views/pushTimer.js"></script>
+<script src="scripts/views/pushTimerList.js"></script>
+</html>
